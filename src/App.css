@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5; /* Light Gray */
+}
+
+.navbar {
+    background-color: #87ceeb;
+}
+
+.container {
+    background-color: #ffffff; /* White */
+    border: 1px solid #ededed; /* Light Gray */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+h2 {
+    color: #333333; /* Charcoal */
+}
+
+
+button.btn-primary {
+    background-color: #ff6f61; /* Coral */
+    border-color: #ff6f61;
+}
+
+button.btn-danger {
+    background-color: #87CEEB; /* Sky Blue */
+    border-color: #87CEEB;
+}
+
+button.btn-primary:hover {
+    background-color: #daa520; /* Goldenrod */
+    border-color: #daa520;
+}
+
+
+.form-control {
+    border: 1px solid #ededed; /* Light Gray */
+    border-radius: 4px;
+}
+
+.form-control:focus {
+    border-color: #87ceeb; /* Sky Blue */
+    box-shadow: 0 0 0 0.2rem rgba(135, 206, 235, 0.25);
+}

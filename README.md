@@ -1,4 +1,5 @@
 # Front-End Specialization - Module 1 - Task Management App with TypeScript
+Author: Elizabeth Yates
 
 ## Task Management App with TypeScript
 
@@ -8,16 +9,16 @@ To successfully create the Task Management Application with TypeScript, you'll n
 
 ### Task Management Features
 
-#### Task Dashboard Page:
+#### Task Dashboard Page (ViewTasks.tsx):
 - Implement a dashboard interface for managing tasks, including features like task lists, creation, editing, and deletion.
 
-#### Task Details Display:
-- Design a detailed view for individual tasks, displaying task information and allowing users to modify task details.
+#### Edit Task Details (TaskForm.tsx):
+- Allows users to modify task details using the task form with the task details already filled out.
 
-#### Task Creation and Editing Pages:
-- Develop forms for creating and editing tasks, incorporating TypeScript types for data validation and error handling.
+#### Add New Task (TaskForm.tsx):
+- A form for creating new tasks, incorporating TypeScript types for data validation and error handling.
 
-#### Authentication and Authorization Pages:
+#### Authentication and Authorization Pages (Auth0Provider.tsx, AuthenticationGuard.tsx, and CallbackPage.tsx):
 - Implement user authentication with Auth0 and authorization pages, including registration and login.
 
 ### TypeScript Integration
@@ -28,7 +29,7 @@ To successfully create the Task Management Application with TypeScript, you'll n
 #### State Management with Typed Hooks:
 - Utilize React's useState hooks with TypeScript to manage application state effectively.
 
-#### Context API for Global State Management:
+#### Context API for Global State Management (TasksContext.tsx):
 - Implement the Context API in React with TypeScript for managing global application state and sharing data between components.
 
 ### Authentication and Authorization with Auth0
