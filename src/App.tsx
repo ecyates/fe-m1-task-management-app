@@ -5,11 +5,11 @@ import NavBar from './components/NavBar';
 import NotFound from './components/NotFound';
 import { Route, Routes } from 'react-router-dom';
 import { TasksProvider } from './context/TasksContext';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import { useAuth0 } from '@auth0/auth0-react';
 import AuthenticationGuard from './components/AuthenticationGuard';
 import CallbackPage from './components/CallbackPage';
-import './App.css';
+// import './App.css';
 
 function App() {
   const {isLoading} = useAuth0();
