@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEdit } from '@fortawesome/free-solid-svg-icons'; // Free Edit Icon
 import { useNavigate } from 'react-router-dom';
 
-const EditTask = ({ id }) => {
+const EditTask: React.FC<{ id: number }> = ({ id }) => {
     const navigate = useNavigate();
 
     const handleEdit = () => {

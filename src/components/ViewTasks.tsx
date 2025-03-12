@@ -18,12 +18,12 @@ const ViewTasks:React.FC = () => {
                 completed: !task.completed,
                 due: task.due,
             }
+            dispatch({ type: "UPDATE_TASK", payload: task });
         }
-        dispatch({ type: "UPDATE_TASK", payload: task });
     }
 
     const clearTasks = () => {
-        state.tasks.map(task=>{
+        state.tasks.forEach(task=>{
             dispatch({type:"DELETE_TASK", payload:task.id});
         })
     }
@@ -68,7 +68,7 @@ const ViewTasks:React.FC = () => {
             </Row>
             <Container className='w-50 border-0'>
             <Row className='text-center mt-3'>
-                <Col><Button className='btn btn-primary' onClick={()=>navigate('/add-task/')}>Add New Session</Button></Col>
+                <Col><Button className='btn btn-primary' onClick={()=>navigate('/add-task/')}>Add New Task</Button></Col>
                 <Col><Button className='btn btn-danger' onClick={clearTasks} >Clear Tasks</Button></Col>
             </Row>
             </Container>

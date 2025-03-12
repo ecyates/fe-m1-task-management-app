@@ -4,7 +4,7 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons'; // Free Trash Icon
 import TasksContext from '../context/TasksContext';
 import { useContext } from 'react';
 
-const DeleteTask = ({ id }) => {
+const DeleteTask: React.FC<{ id: number }> = ({ id }) => {
     const { dispatch } = useContext(TasksContext);
 
     const handleDelete = () => {

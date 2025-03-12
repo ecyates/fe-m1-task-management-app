@@ -4,7 +4,11 @@ import { useNavigate, useParams } from "react-router-dom";
 import TasksContext from "../context/TasksContext";
 
 const TaskForm:React.FC = () => {
-    const [task, setTask] = useState({ name: "", completed: false, due: null });
+    const [task, setTask] = useState<{ name: string; completed: boolean; due: Date | null }>({
+        name: "",
+        completed: false,
+        due: null,
+    });
     const { id } = useParams();
     const { state, dispatch } = useContext(TasksContext);
     const [showSuccessModal, setShowSuccessModal] = useState(false);
@@ -18,7 +22,7 @@ const TaskForm:React.FC = () => {
             if (id) {
                 const task = state.tasks.find((t) => t.id === parseInt(id));
                 if (task) {
-                    setTask({ name: task.name, completed: task.completed, due: task.due });
+                    setTask({ name: task.name, completed: task.completed, due: task.due ?? null });
                 } else {
                     setError("Task not found.");
                 }

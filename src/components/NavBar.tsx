@@ -16,9 +16,9 @@ function NavBar(){
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto text-center">
-                            <Nav.Link href="/" activeClassName='active'>Home</Nav.Link>
-                            <Nav.Link href="/tasks/" activeClassName='active'>View Tasks</Nav.Link>
-                            <Nav.Link href="/add-task/" activeClassName='active'>Add Task</Nav.Link>
+                            <Nav.Link href="/" className='active'>Home</Nav.Link>
+                            <Nav.Link href="/tasks/" className='active'>View Tasks</Nav.Link>
+                            <Nav.Link href="/add-task/" className='active'>Add Task</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </>)

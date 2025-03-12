@@ -1,7 +1,6 @@
 // CallbackPage.tsx
 import { useAuth0 } from "@auth0/auth0-react";
-import { Container, Col } from "react-bootstrap";
-import NavBar from "./NavBar";
+import { Container } from "react-bootstrap";
 
 const CallbackPage:React.FC = () =>{
     const { error, user }= useAuth0();
