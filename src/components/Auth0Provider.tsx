@@ -9,9 +9,9 @@ type Auth0ProviderWithNavigateProps = {
 
 const Auth0ProviderWithNavigate:React.FC <Auth0ProviderWithNavigateProps> = ({children})=>{
     const navigate = useNavigate();
-    const domain = 'dev-nkp152tgcpjtepxi.us.auth0.com';
-    const clientId = 'x5GlM37FgQVwNgUtOT1oVg5f68erqZi4';
-    const redirectUri = "http://localhost:5173/callback"; 
+    const domain="dev-nkp152tgcpjtepxi.us.auth0.com";
+    const clientId="G7VkjMWH1qHVrVOBaMWQryEsGWguLprm";
+    const redirectUri = "https://fe-m1-task-management-app.vercel.app/callback"; 
 
     const onRedirectCallback = (appState:any) => {
         navigate((appState&&appState.returnTo)||window.location.pathname);
