@@ -11,7 +11,7 @@ const Auth0ProviderWithNavigate:React.FC <Auth0ProviderWithNavigateProps> = ({ch
     const navigate = useNavigate();
     const domain="dev-nkp152tgcpjtepxi.us.auth0.com";
     const clientId="G7VkjMWH1qHVrVOBaMWQryEsGWguLprm";
-    const redirectUri = "https://fe-m1-task-management-app.vercel.app/callback"; 
+    const redirectUri = window.location.origin + "/callback";
 
     const onRedirectCallback = (appState:any) => {
         navigate((appState&&appState.returnTo)||window.location.pathname);
