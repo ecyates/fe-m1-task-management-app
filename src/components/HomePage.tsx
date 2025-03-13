@@ -13,7 +13,7 @@ function HomePage() {
             <Row>
                 <Col>
                     <Image 
-                        src="../src/assets/home-page-image.jpg" 
+                        src="../assets/home-page-image.jpg" 
                         alt="Productivity Illustration" 
                         fluid 
                         className="mb-4" 
